@@ -1,0 +1,37 @@
+{% load static %}
+<!-- Header Area Starts -->
+	<header class="header-area main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo-area">
+                        <a href="{% url 'index' %}"><img src="{% static 'home/images/logo.png' %}" alt="logo"><br>
+                        Fat to Fit
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="custom-navbar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="main-menu">
+                        <nav class="navbar navbar-expand-sm   navbar-dark primary-color">
+                         <ul class="navbar-nav">
+                            <li class="active"><a href="{% url 'index' %}"class="btn btn-light stretched-link">Home</a></li>
+                            <li><a href="{% url 'about' %}" class="btn btn-light stretched-link">About us</a></li>
+                            <li><a href="{% url 'batches' %}" class="btn btn-light stretched-link">Batches</a></li>
+                            <li><a href="{% url 'instructor' %}" class="btn btn-light stretched-link">Instructors</a></li>
+                            <li><a href="{% url 'contact' %}" class="btn btn-light stretched-link">Contact</a></li>
+                            <li><a href="{% url 'service' %}" class="btn btn-light stretched-link">Services</a></li>
+                            <li><a href="{% url 'gallery' %}" class="btn btn-light stretched-link">Gallery</a></li>
+                            <li><a  href="{% url 'login_view' %}" class="btn btn-light stretched-link">Login</a></li>
+                         </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  <!-- Header Area End -->
